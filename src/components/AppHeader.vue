@@ -12,7 +12,7 @@
                 </ul>
             </div>
             <div>
-                <input type="text" v-model="query" placeholder="Cerca un film o serie tv">
+                <input @keydown.enter="fetchData" type="text" v-model="query" placeholder="Cerca un film o serie tv">
                 <button @click="fetchData">Cerca</button>
             </div>
         </div>
